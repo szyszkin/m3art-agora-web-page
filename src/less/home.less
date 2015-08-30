@@ -1,0 +1,169 @@
+// Add main less styles here
+a, a:hover{text-decoration: none;}
+.responsive-locker{
+    width:@widthLocker;
+    margin: @marginAuto;
+    position: relative;
+}
+.w100p{width: @w100;}
+
+.paddR40{padding-right: 40px;}
+.paddL40{padding-left: 40px;}
+.paddB10{padding-bottom: @menuLinkPaddV;}
+.paddT10{padding-top: @menuLinkPaddV;}
+
+
+.paddV10{.paddB10; .paddT10;}
+.paddH40{.paddR40; .paddL40;}
+
+.jusyRed{color: @jusyRed;}
+.darkBlue{color: @darkBlue;}
+
+.w20p{width: 20%;}
+.w80p{width: 79%;}
+
+.textright{text-align: right;}
+
+.left{float: left;}
+.right{float: right;}
+.cf{clear: both; font-size: 1px; line-height: 1px; }
+
+#topBar{
+    font-family: @mainFont1;
+    font-size: @sizeH6;
+    background-color: @topBarBgColor;
+    height: @topBarHeight;
+    .textright;
+    
+    .block{
+        display: inline-block;
+        line-height: 39px;
+    }
+}
+
+#mainMenu{
+    font-family: @mainFont3;
+    font-size: @sizeMenu;
+    list-style: none;
+    .textright;
+    li{
+        padding: 0 @menuLinkPadd;
+        display: inline-block;
+        a.active{
+            font-weight: bold;
+            color: @darkBlue;
+            border-bottom: @jusyRed 1px solid;
+        }
+        a:hover{
+            text-decoration: none;
+        }
+        a{
+            font-weight: normal;
+            color:@lightGray;
+            padding: @menuLinkPaddV 0;
+        }
+        
+    }
+    li:last-child{
+        padding: 0 0 0 @menuLinkPadd;   
+    }
+}
+
+#topMenuBar{
+    background-color: @whiteColor;
+    height: @topMenuBarHeight;
+    .block{
+        display: inline-block;
+        line-height: @topMenuBarHeight;
+    }
+}
+
+#mainBaner{
+    background-color: @mainBanerBgColor;
+    background-image: url("../../img/banner.jpg");
+    height: @mainBanerHeight;
+    padding-top: @bannerContentTopPadding;
+}
+
+#bannerContent{
+    width:465px;
+    color: @headerBorderColor;
+    
+    .banerContent{
+        color: @whiteColor;
+        padding-top: 3px;
+        line-height: 19px;
+        margin-bottom: 26px;
+        
+    }
+    .callToAction{
+        a{
+            font-family: @mainFont3;
+            font-size: @sizeH4;
+            display: inline-block;
+            border: 1px solid @whiteColor;
+            line-height: 50px;
+            width: 200px;
+            text-align: center;
+            color: @whiteColor;
+        }
+    }
+    .headerText{
+        color: @whiteColor;
+    }
+}
+
+hr{
+    width: 25px;
+    border:none;
+    border-top: @jusyRed 1px solid;
+    display: inline-block;
+}
+
+.headerText{
+    font-family: @mainFont1;
+    font-size: @sizeH2;
+    line-height: 49px;
+    letter-spacing: -1px;
+    font-weight: 300;
+}
+
+.headerMini{
+    width: 122px;
+    font-family: @mainFont3;
+    font-size: @sizeH5;
+    border: @headerBorderColor 1px solid;
+    margin-bottom: 22px;
+    font-weight: 300;
+    height: 27px;
+    span:first-child{
+        width:32px;
+        border-right: @headerBorderColor 1px solid;
+        text-align: center;
+        line-height: @headerHeight;
+    }
+    span{
+        display: inline-block;
+        line-height: 23px;
+        vertical-align: top;
+    }
+    span:last-child{
+        padding-left: 10px;
+    }
+}
+.normalContent{
+    color: @darkBlue;
+    padding-top: 3px;
+    line-height: 19px;
+    margin-bottom: 26px;
+}
+.scrollBottom{
+    text-align: center;
+    margin-top: 102px;
+    a{
+        width: 31px;
+        height: 31px;
+        background-image: url("../../img/scroll_button.png");
+        display: inline-block;
+    }
+}
